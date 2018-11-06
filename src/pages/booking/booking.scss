@@ -1,0 +1,17 @@
+page-booking {
+  .label{
+      text-align: center;
+  }
+  .main{
+    background-image: url('../../assets/all.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+}
+img{
+  border-radius: 60%; 
+  opacity: 0.4;
+  height: 80px;;
+}
+}

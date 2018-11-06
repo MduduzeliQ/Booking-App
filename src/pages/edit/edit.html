@@ -1,0 +1,57 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>edit</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-avatar>
+    <div align="center">
+       <img src="../../assets/logo.jpg">
+    </div>
+      </ion-avatar>
+<ion-list *ngFor="let i of itemlist">
+  <ion-label>Name</ion-label>
+<ion-input type="text" [(ngModel)]="name"></ion-input>
+    
+<ion-label>Contact</ion-label>
+<ion-input type="number" [(ngModel)]="contact"></ion-input>
+      
+<ion-label>Date In</ion-label>
+<ion-input type="date" [(ngModel)]="Datein">Date in</ion-input>
+
+<ion-label>Date Out</ion-label>
+<ion-input type="date" [(ngModel)]="Dateout">Date out</ion-input>
+
+<ion-label>Guest number</ion-label>
+<select [(ngModel)]="guestno">
+<option>1</option>
+<option>2</option>
+</select>
+
+<ion-label>Child number</ion-label>
+<select [(ngModel)]="childno">
+<option>1</option>
+<option>2</option>
+</select>
+
+<ion-label>Room number</ion-label>
+<select [(ngModel)]="roomno">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+</select>
+</ion-list>
+
+<br>
+<br>
+<button ion-button full color="primary" (click)="Edit(i)">Edit</button>
+</ion-content>

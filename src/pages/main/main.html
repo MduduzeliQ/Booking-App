@@ -1,0 +1,47 @@
+<ion-content >
+  <br>
+  <br>
+  <br>
+  
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <div><img src="../../assets/logo.jpg" class="animated zoomInUp delay-2s">
+      <h2>Tashnikov Motel</h2>
+    <p>"Enjoy yourself peacefully without disturbance"</p>
+    </div>
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+  </div>
+
+<ion-header>
+
+  <ion-navbar color="greyish">
+    <ion-title class="title">Tashnikov Motel</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+ 
+    <ion-avatar>
+    <div align="center">
+       <img src="../../assets/logo.jpg">
+    </div>
+      </ion-avatar>
+<br>
+  <ion-list>
+    <ion-item>
+      <ion-label floating><ion-icon name="mail" class="i"></ion-icon>| Email</ion-label>
+        <ion-input type="text" [(ngModel)]="Email" ></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating><ion-icon name="lock" class="i"></ion-icon>| Password</ion-label>
+        <ion-input type="password" maxlength="30" [(ngModel)]="Password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button color="stant" (click)="login()">Get Started</button>
+  <p>Forgot password? <a (click)="showForgotPassword()">Send email</a></p>
+  <p>Don't have an account? <a (click)="next()">Sign up</a></p>
+</ion-content>

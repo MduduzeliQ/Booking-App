@@ -1,0 +1,16 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>information</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="main" padding>
+  <ion-list >
+    <ion-card (click)="view()" *ngFor="let F of itemlist" >
+      <h2>{{F.item}}</h2>
+    </ion-card>
+  </ion-list>
+</ion-content>

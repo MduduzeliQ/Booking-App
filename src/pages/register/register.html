@@ -1,0 +1,31 @@
+
+<ion-header>
+<ion-navbar color="greyish">
+  <ion-title>Registration</ion-title>
+</ion-navbar>
+</ion-header>
+
+
+<ion-content class="animated slideInRight delay-2s" padding>
+    <ion-avatar>
+        <div align="center">
+           <img src="../../assets/logo.jpg">
+        </div>
+          </ion-avatar>
+          <br>
+    <ion-list>
+     
+        <ion-item>
+          <ion-label floating><ion-icon name="mail" class="i"></ion-icon>| Email </ion-label>
+            <ion-input type="text" [(ngModel)]="Email"></ion-input>
+        </ion-item>
+
+
+<p><marquee>Password should have aleast 6 characters </marquee></p>
+     <ion-item>
+              <ion-label floating><ion-icon name="lock" class="i"></ion-icon>| Password</ion-label>
+                <ion-input type="password" maxlength="30" [(ngModel)]="Password"></ion-input>
+            </ion-item>
+      </ion-list>
+      <button ion-button full color="greenish" (click)="signup()">Register</button>
+</ion-content>

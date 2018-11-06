@@ -1,0 +1,34 @@
+page-gallery {
+.title{
+    text-shadow: 4px 4px 4px greenyellow;
+    font-weight: bold;
+    border: 4px;
+    background-color: grey;
+  
+}
+h1{
+    text-shadow: 2px 4px 4px rgba(3, 73, 201, 0.946);
+    font-weight: bold;
+    font-style: italic;
+}
+h2{
+    text-shadow: 2px 4px 4px rgba(3, 73, 201, 0.946);
+    font-weight: bold;
+    font-style: italic;
+}
+.main{
+    background-image: url('../../assets/all.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.icon{
+    color: greenyellow;
+}
+.p{
+    color:red;
+}
+.div{
+    color:white;
+}
+}

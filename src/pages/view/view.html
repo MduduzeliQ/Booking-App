@@ -1,0 +1,22 @@
+
+
+
+<ion-content padding>
+  <ion-card *ngFor="let F of itemlist; let i = index">
+    <h2>Name: {{F.item}}</h2>
+    <p>Contact: {{F.item1}}</p>
+    <p>Date in: {{F.item2}}</p>
+    <p>Date out: {{F.item3}}</p>
+    <p>Guest No: {{F.item4}}</p>
+    <p>Child No: {{F.item5}}</p>
+    <p>Room No: {{F.item6}}</p>
+
+    <div align="center">
+      <button ion-button (click)="Delete(F.key)">Delete</button>
+      <button ion-button (click)="Edit()">Edit</button>
+    </div>
+  </ion-card>
+  <ion-fab class="colro" color="secondary" mini bottom right>
+      <button ion-fab (click)="logout()"><ion-icon name="md-log-out"></ion-icon></button>
+       </ion-fab>
+</ion-content>

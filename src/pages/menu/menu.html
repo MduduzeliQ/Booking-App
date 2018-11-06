@@ -1,0 +1,21 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>History</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngFor="let F of itemlist; let i = index">
+    <h2>Name: {{F.item}}</h2>
+    <p>Contact: {{F.item1}}</p>
+    <p>Date in: {{F.item2}}</p>
+    <p>Date out: {{F.item3}}</p>
+    <p>Guest No: {{F.item4}}</p>
+    <p>Child No: {{F.item5}}</p>
+    <p>Room No: {{F.item6}}</p>
+  </ion-card>
+</ion-content>
